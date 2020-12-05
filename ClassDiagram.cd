@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GUI" Collapsed="true">
+    <Position X="5.75" Y="4.25" Width="1.5" />
+    <Members>
+      <Method Name="~GUI" Hidden="true" />
+      <Method Name="GUI" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="GUI::MENU_ITEM" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GUI\GUI.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CgABAIBAAAQQQAAAJAAAEAAAhBAIAAgGAABAFAgAgHA=</HashCode>
+      <FileName>GUI\GUI.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pWind" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Drawable">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="~Drawable" Hidden="true" />
+      <Method Name="Drawable" Hidden="true" />
+      <Method Name="getGfxInfo" Hidden="true" />
+      <Method Name="isSelected" Hidden="true" />
+      <Method Name="setGfxInfo" Hidden="true" />
+      <Method Name="setSelected" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAQAQAAAAAAAAAAgABAAAAAAAgAAAgAAAAAAAAIo=</HashCode>
+      <FileName>GUI\Drawable.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="GfxInfo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Action">
+    <Position X="0.75" Y="4" Width="1.5" />
+    <Members>
+      <Method Name="~Action" Hidden="true" />
+      <Method Name="Action" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAACAAAAEAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Actions\Action.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pReg" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ActionAddCourse">
+    <Position X="0.75" Y="5.5" Width="1.5" />
+    <Members>
+      <Method Name="~ActionAddCourse" Hidden="true" />
+      <Method Name="ActionAddCourse" Hidden="true" />
+      <Method Name="Execute" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Actions\ActionAddCourse.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudyPlan" Collapsed="true">
+    <Position X="5.75" Y="3" Width="1.5" />
+    <Members>
+      <Method Name="~StudyPlan" Hidden="true" />
+      <Method Name="StudyPlan" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="plan" Type="std::vector&lt;_Ty, _Alloc&gt;" FixedFromPoint="true">
+      <Path>
+        <Point X="5.75" Y="3.41" />
+        <Point X="5" Y="3.41" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BAAAAUAAAAAAAgACAAwQBEAABAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StudyPlan\StudyPlan.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="plan" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="window" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>lJITjJAVABAAoEAUADQAkCDGASAH6FKIAEtkaGIGQME=</HashCode>
+      <FileName>GUI\CMUgraphicsLib\CMUgraphics.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Registrar" Collapsed="true">
+    <Position X="3.5" Y="4" Width="1.5" />
+    <Members>
+      <Method Name="~Registrar" Hidden="true" />
+      <Method Name="Registrar" Hidden="true" />
+    </Members>
+    <AssociationLine Name="pGUI" Type="GUI" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="4.379" />
+        <Point X="5.75" Y="4.379" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="pSPlan" Type="StudyPlan" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="4.034" />
+        <Point X="6.5" Y="4.034" />
+        <Point X="6.5" Y="3.691" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AEAQAAAAAEAAQAAAQAAAAAAAQAAAAAAABAAAABAIAAY=</HashCode>
+      <FileName>Registrar.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pGUI" />
+      <Field Name="RegRules" />
+      <Field Name="pSPlan" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="std::vector&lt;_Ty, _Alloc&gt;" Collapsed="true">
+    <Position X="3.5" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IUoEEIEqCLBMUEBAAKMIAgASAgUESAIAxQMwgwAEQgI=</HashCode>
+      <FileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\vector</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="std::list&lt;_Ty, _Alloc&gt;" Collapsed="true">
+    <Position X="0.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEgEEqECAHBEgEhEAKEIAgISFAwAKJIAoQEkAgAFQgo=</HashCode>
+      <FileName>c:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\list</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Course" Collapsed="true">
+    <Position X="0.75" Y="3" Width="1.5" />
+    <Members>
+      <Method Name="~Course" Hidden="true" />
+      <Method Name="Course" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>CIBAAQAAAAAAAECAAIAAAAAAIAABAEAAAAAAAIAAAAA=</HashCode>
+      <FileName>Courses\Course.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AcademicYear" Collapsed="true">
+    <Position X="3.5" Y="3" Width="1.5" />
+    <Members>
+      <Method Name="~AcademicYear" Hidden="true" />
+      <Method Name="AcademicYear" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BAEAAQAAAAAAAgABAIQQBEAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StudyPlan\AcademicYear.h</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="YearCourses" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Struct Name="graphicsInfo" Collapsed="true">
+    <Position X="1" Y="0.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>GUI\Drawable.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Rules" Collapsed="true">
+    <Position X="3.5" Y="5.25" Width="1.5" />
+    <Members>
+      <Field Name="MajorCompulsory" Hidden="true" />
+      <Field Name="MajorElective" Hidden="true" />
+      <Field Name="ReqMajorCredits" Hidden="true" />
+      <Field Name="ReqTrackCredits" Hidden="true" />
+      <Field Name="ReqUnivCredits" Hidden="true" />
+      <Field Name="SemMaxCredit" Hidden="true" />
+      <Field Name="SemMinCredit" Hidden="true" />
+      <Field Name="TrackCompulsory" Hidden="true" />
+      <Field Name="TrackElective" Hidden="true" />
+      <Field Name="UnivCompulsory" Hidden="true" />
+      <Field Name="UnivElective" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAABAhEAAABIAIQAAABAgAAIACAAAA=</HashCode>
+      <FileName>Rules.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="MajorElective" />
+    </ShowAsAssociation>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
